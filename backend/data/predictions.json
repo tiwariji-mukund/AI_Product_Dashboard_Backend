@@ -6,17 +6,17 @@
   },
   {
     "input": "This product is a complete waste of money. Avoid it.",
-    "prediction": "neutral",
-    "actual": "neutral"
+    "prediction": "negative",
+    "actual": "negative"
   },
   {
     "input": "The product is okay, not great but not terrible.",
-    "prediction": "neutral",
+    "prediction": "positive",
     "actual": "positive"
   },
   {
     "input": "This product is a garbage.",
-    "prediction": "neutral",
-    "actual": "neutral"
+    "prediction": "positive",
+    "actual": "negative"
   }
 ]
