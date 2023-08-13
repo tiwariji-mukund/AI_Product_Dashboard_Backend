@@ -19,7 +19,7 @@ module.exports.metrics = (req,res) => {
 
 module.exports.predictions = (req, res) => {
     try {
-        exec('python python/ai_predictions.py', (err, stdout, stderr) => {
+        exec('python ../python/ai_predictions.py', (err, stdout, stderr) => {
             if(err){
                 res.json({error: 'error reading the python script'});
                 return;
