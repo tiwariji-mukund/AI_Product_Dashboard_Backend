@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
 const passport = require('passport');
 const homeController = require('../controllers/homeControllers');
 
@@ -10,7 +11,7 @@ router.post('/create-session', passport.authenticate('local', {failureRedirect: 
 router.get('/delete-session', homeController.destroy_session);
 
 router.use('/admin', require('./admin'));
-// router.use('/api', require('./api'));
+router.use('/api', require('./api'));
 
 
 module.exports = router;

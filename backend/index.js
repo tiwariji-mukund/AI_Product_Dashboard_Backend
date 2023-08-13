@@ -1,6 +1,7 @@
 const express = require('express');
 const port = 8000;
 const app = express();
+const fs = require('fs');
 const cookieParser = require('cookie-parser'); // install cookie-parser for cookies
 const db = require('./config/mongoose'); // import db
 //install passport and session
