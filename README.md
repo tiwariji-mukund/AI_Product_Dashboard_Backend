@@ -42,6 +42,10 @@ The project directory structure is organized as follows:
 
 4. Navigate to the `project-folder/python` directory: `cd ../python`
 
+5. Run the command `python ai_predictions.py` to call the python script to make predictions
+
+   <b>NOTE:</b> Make sure to run this python command everytime you restart the server or want to make changes in the output result 
+
 
 7. Start the Node.js server by returning to the `backend` directory and running:   `npm start`
 
@@ -53,7 +57,7 @@ The project directory structure is organized as follows:
 
 ## Design Decisions
 
-- **Directory Structure**: The project is organized into different folders for better separation of concerns: `backend` for Node.js code, EJS temolate, routes, controllers, database and `python` for Python scripts.
+- **Directory Structure**: The project is organized into different folders for better separation of concerns: `backend` for Node.js server, EJS templates, routes, controllers, database and `python` for Python scripts.
 
 - **API Endpoints**: Separate API endpoints are created for metrics and predictions to adhere to RESTful principles.
 
