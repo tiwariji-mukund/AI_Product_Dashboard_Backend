@@ -13,6 +13,7 @@ const MongoStore = require('connect-mongo');
 app.use(express.urlencoded());
 app.use(cookieParser());
 
+// all the assets file like css, js and image etc will be stored here
 app.use(express.static('./assets'));
 
 
@@ -23,7 +24,7 @@ app.set('views', './views');
 // mongo store is used to store the session cookies in the db
 app.use(session({
     name: 'codeial',
-    //TODO change secretbefore deployment 
+    //TODO change secret before deployment 
     secret: 'blahblahcarblahblahcar',
     saveUninitialized: false,
     resave: false,
@@ -43,12 +44,12 @@ app.use(session({
 
 app.use(passport.initialize()); //initialize passport and tell the app to use it
 app.use(passport.session()); //tell the app to use passport for creating a session 
-app.use(passport.setAuthenticatedUser);
+app.use(passport.setAuthenticatedUser); // used passport to set the authentication mechanism
 
 // home page routes
 app.use('/', require('./routes'));
 
-
+// run the server
 app.listen(port, (err) => {
     if(err){
         console.log(`Error in running the server ${err}`);
