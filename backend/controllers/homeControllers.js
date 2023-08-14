@@ -48,6 +48,7 @@ module.exports.create_session = (req,res) => {
     return res.redirect('/admin/dashboard');
 }
 
+// controller for log out and delete the session
 module.exports.destroy_session = (req, res, next) => {
     req.logout((err) => {
         if(err) return next(err);

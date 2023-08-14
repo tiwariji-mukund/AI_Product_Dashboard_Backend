@@ -8,10 +8,14 @@
 <body>
     <h1>Predictions</h1>
     <ul>
+        <!-- will traverse through all the predictions for all the data -->
         <% predictions.forEach(prediction => { %>
             <li>
-                <strong>Input: </strong> <%= prediction.input %> <br><br>
+                <!-- print the input data -->
                 <strong>Predicted: </strong> <%= prediction.prediction %><br><br>
+                <!-- print the predicted result from input data -->
+                <strong>Input: </strong> <%= prediction.input %> <br><br>
+                <!-- print the actual result -->
                 <strong>Actual: </strong> <%= prediction.actual %><br><br><br>
             </li>
         <% }) %>

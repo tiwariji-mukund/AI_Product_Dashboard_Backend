@@ -1,18 +1,18 @@
 [
   {
     "input": "I absolutely love this product! It's fantastic!",
-    "prediction": "negative",
-    "actual": "neutral"
-  },
-  {
-    "input": "This product is a complete waste of money. Avoid it.",
-    "prediction": "negative",
+    "prediction": "neutral",
     "actual": "negative"
   },
   {
-    "input": "The product is okay, not great but not terrible.",
-    "prediction": "positive",
+    "input": "This product is a complete waste of money. Avoid it.",
+    "prediction": "neutral",
     "actual": "positive"
+  },
+  {
+    "input": "The product is okay, not great but not terrible.",
+    "prediction": "negative",
+    "actual": "neutral"
   },
   {
     "input": "This product is a garbage.",
